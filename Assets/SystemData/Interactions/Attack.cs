@@ -9,9 +9,12 @@ namespace TwoDLife.Interactions
     public class Attack : NetworkBehaviour
     {
         public int damage;
+        public Entity SpawnedEntity;
+        public bool canDamageSelf = false;
+
         private void Start()
         {
-            Invoke(nameof(DestroyObject), 1.5f);
+            Invoke(nameof(DestroyObject), 0.25f);
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
@@ -19,16 +22,21 @@ namespace TwoDLife.Interactions
             if (IsServer || IsHost)
             {
                 var entity = collision.GetComponent<Entity>();
+                bool isSelfAttack = entity == SpawnedEntity;
+
                 if (entity != null)
                 {
-                    var health = entity.Health;
-                    health.Value -= damage;
-
+                    if ((isSelfAttack && canDamageSelf) || (!canDamageSelf && !isSelfAttack))
+                    {
+                        var health = entity.Health;
+                        health.Value -= damage;
+                        DestroyObject();
+                    }
                 }
             }
         }
 
-        private void OnTriggerStay2D(Collider2D collision)
+        void CheckOverlap()
         {
 
         }

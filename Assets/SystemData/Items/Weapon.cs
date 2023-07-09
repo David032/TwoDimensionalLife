@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TwoDLife.Entities;
 using TwoDLife.Interactions;
 using TwoDLife.Player;
 using Unity.Netcode;
@@ -15,38 +16,46 @@ namespace TwoDLife.Item
 
         public void Use(GameObject user)
         {
+            //Will need reworkign for AI
             var facing = user.GetComponent<PlayerControls>().ClickFacing;
             var playerPosition = user.transform.position;
+
+            GameObject go;
             switch (facing)
             {
                 case Facing.Up:
                     var upSide = playerPosition + new Vector3(0, 0.16f, 0);
-                    var upGo = Instantiate(DamageObject, upSide, Quaternion.identity);
-                    upGo.GetComponent<Attack>().damage = Damage;
-                    upGo.GetComponent<NetworkObject>().Spawn();
+                    go = Instantiate(DamageObject, upSide, Quaternion.identity);
+                    ConfigureAttack(go, 270, user);
                     break;
                 case Facing.Down:
                     var downSide = playerPosition + new Vector3(0, -0.16f, 0);
-                    var downGo = Instantiate(DamageObject, downSide, Quaternion.identity);
-                    downGo.GetComponent<Attack>().damage = Damage;
-                    downGo.GetComponent<NetworkObject>().Spawn();
+                    go = Instantiate(DamageObject, downSide, Quaternion.identity);
+                    ConfigureAttack(go, 90, user);
                     break;
                 case Facing.Left:
                     var leftSide = playerPosition + new Vector3(-0.16f, 0, 0);
-                    var go = Instantiate(DamageObject, leftSide, Quaternion.identity);
-                    go.GetComponent<Attack>().damage = Damage;
-                    go.GetComponent<NetworkObject>().Spawn();
+                    go = Instantiate(DamageObject, leftSide, Quaternion.identity);
+                    ConfigureAttack(go, 180, user);
                     break;
                 case Facing.Right:
                     var rightSide = playerPosition + new Vector3(0.16f, 0, 0);
-                    var rightGo = Instantiate(DamageObject, rightSide, Quaternion.identity);
-                    rightGo.GetComponent<Attack>().damage = Damage;
-                    rightGo.GetComponent<NetworkObject>().Spawn();
+                    go = Instantiate(DamageObject, rightSide, Quaternion.identity);
+                    ConfigureAttack(go, 0, user);
                     break;
                 default:
                     break;
             }
 
+        }
+
+        private void ConfigureAttack(GameObject go, int rotation, GameObject user)
+        {
+            go.GetComponent<Attack>().damage = Damage;
+            go.GetComponent<NetworkObject>().Spawn();
+            var particleSystem = go.GetComponentInChildren<ParticleSystem>().main;
+            particleSystem.startRotation = rotation * Mathf.Deg2Rad;
+            go.GetComponent<Attack>().SpawnedEntity = user.GetComponent<Entity>();
         }
     }
 }

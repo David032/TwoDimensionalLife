@@ -38,7 +38,7 @@ namespace TwoDLife.Entities
         IEnumerator ShowDamageIndicator()
         {
             DamageIndicator.SetActive(true);
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(1f);
             DamageIndicator.SetActive(false);
         }
     }
