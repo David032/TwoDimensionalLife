@@ -15,27 +15,12 @@ namespace TwoDLife.Entities
         public UnityEvent OnEmpty;
         public UnityEvent OnChange;
 
-        public int Value
-        {
-            get => current;
-            set
-            {
-                current += Math.Clamp(value, 0, max);
-                OnChange?.Invoke();
-                if (current >= 0)
-                {
-                    OnEmpty?.Invoke();
-                }
-            }
-        }
-
         public void SetUp(string name, int max, int current, UnityEvent onEmpty, int value)
         {
             this.name = name;
             this.max = max;
             this.current = current;
             OnEmpty = onEmpty;
-            Value = value;
         }
         public void SetUp(string CharacteristicName, int startingValue = 100)
         {
@@ -47,6 +32,19 @@ namespace TwoDLife.Entities
         {
             max = startingValue;
             current = startingValue;
+        }
+
+        public void Increase(int value)
+        {
+            current += value;
+            OnChange?.Invoke();
+            //Sounds, sfx here
+        }
+        public void Decrease(int value)
+        {
+            current -= value;
+            OnChange?.Invoke();
+            //Sounds, sfx here
         }
     }
 }

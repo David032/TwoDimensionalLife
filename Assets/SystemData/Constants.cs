@@ -11,5 +11,10 @@ namespace TwoDLife
         Left,
         Right
     }
+
+    public enum Characteristic
+    {
+        Health,
+    }
 }
 

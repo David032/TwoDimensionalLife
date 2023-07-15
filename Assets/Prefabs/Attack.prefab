@@ -4902,7 +4902,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08378cb9ca83a4241b97cbe2f8358fcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
+  damage: 1
+  SpawnedEntity: {fileID: 0}
+  canDamageSelf: 0
 --- !u!58 &8223118250200773696
 CircleCollider2D:
   m_ObjectHideFlags: 0

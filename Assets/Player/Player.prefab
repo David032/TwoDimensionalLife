@@ -245,6 +245,7 @@ Transform:
   - {fileID: 6960181417998351603}
   - {fileID: 5356618987386798741}
   - {fileID: 5240744044331388158}
+  - {fileID: 511941766259348616}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -263,6 +264,9 @@ MonoBehaviour:
   PlayerMovementEffect: {fileID: 6911341074867067942}
   canMove: 1
   canUse: 1
+  canEmote: 1
+  canInteract: 1
+  isInteracting: 0
   playerSpeed: 1
   ClickFacing: 0
 --- !u!114 &4696188527731482877
@@ -447,6 +451,54 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 2286bb0f-7a5d-4377-890a-a1780fd7901d
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4696188527731482850}
+        m_TargetAssemblyTypeName: TwoDLife.Player.PlayerControls, Assembly-CSharp
+        m_MethodName: OnEmote
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 0ef7ec7b-7742-4fd4-9ff0-39570aa3abbb
+    m_ActionName: Player/Emote[/Keyboard/1,/Keyboard/e,/Keyboard/2,/Keyboard/3]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4696188527731482850}
+        m_TargetAssemblyTypeName: TwoDLife.Player.PlayerControls, Assembly-CSharp
+        m_MethodName: OnInteract
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: caf0aa9a-2652-4321-a006-d341d3fc2fd0
+    m_ActionName: Player/Interact[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4696188527731482850}
+        m_TargetAssemblyTypeName: TwoDLife.Player.PlayerControls, Assembly-CSharp
+        m_MethodName: OnSlotOneUse
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: ff6ec4d1-738a-4847-9d12-b0f21bf2749d
+    m_ActionName: Player/UseItem1[/Keyboard/1]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -502,6 +554,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cacae07a95ea1745a273c1285cda209, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tools:
+  - {fileID: 11400000, guid: 5214d70a699fe9d449ef9b1b57011cac, type: 2}
   EquippedItem: {fileID: 11400000, guid: 2a5f0bff8dafb734eb5691c4f7bca0b4, type: 2}
 --- !u!114 &-483026293363303209
 MonoBehaviour:
@@ -769,6 +823,68 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5887381366056169491, guid: f0c89a7d36899e14b8a80a372cbe6dbe, type: 3}
   m_PrefabInstance: {fileID: 3540856488892878048}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5246621360071651741
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4696188527731482876}
+    m_Modifications:
+    - target: {fileID: 3273920775097278174, guid: 10066c7e77da8614387d2ffd83e19291, type: 3}
+      propertyPath: m_Name
+      value: EmoteSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752633870224663829, guid: 10066c7e77da8614387d2ffd83e19291, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752633870224663829, guid: 10066c7e77da8614387d2ffd83e19291, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752633870224663829, guid: 10066c7e77da8614387d2ffd83e19291, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752633870224663829, guid: 10066c7e77da8614387d2ffd83e19291, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752633870224663829, guid: 10066c7e77da8614387d2ffd83e19291, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752633870224663829, guid: 10066c7e77da8614387d2ffd83e19291, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752633870224663829, guid: 10066c7e77da8614387d2ffd83e19291, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752633870224663829, guid: 10066c7e77da8614387d2ffd83e19291, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752633870224663829, guid: 10066c7e77da8614387d2ffd83e19291, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752633870224663829, guid: 10066c7e77da8614387d2ffd83e19291, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752633870224663829, guid: 10066c7e77da8614387d2ffd83e19291, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 10066c7e77da8614387d2ffd83e19291, type: 3}
+--- !u!4 &511941766259348616 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5752633870224663829, guid: 10066c7e77da8614387d2ffd83e19291, type: 3}
+  m_PrefabInstance: {fileID: 5246621360071651741}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5787485139210790566
 PrefabInstance:

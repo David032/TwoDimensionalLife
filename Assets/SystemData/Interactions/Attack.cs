@@ -8,9 +8,10 @@ namespace TwoDLife.Interactions
 {
     public class Attack : NetworkBehaviour
     {
-        public int damage;
+        public int amount;
         public Entity SpawnedEntity;
         public bool canDamageSelf = false;
+        public bool isDamaging = true;
 
         private void Start()
         {
@@ -29,7 +30,14 @@ namespace TwoDLife.Interactions
                     if ((isSelfAttack && canDamageSelf) || (!canDamageSelf && !isSelfAttack))
                     {
                         var health = entity.Health;
-                        health.Value -= damage;
+                        if (isDamaging)
+                        {
+                            health.Decrease(amount);
+                        }
+                        else
+                        {
+                            health.Increase(amount);
+                        }
                         DestroyObject();
                     }
                 }

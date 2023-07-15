@@ -51,7 +51,7 @@ namespace TwoDLife.Item
 
         private void ConfigureAttack(GameObject go, int rotation, GameObject user)
         {
-            go.GetComponent<Attack>().damage = Damage;
+            go.GetComponent<Attack>().amount = Damage;
             go.GetComponent<NetworkObject>().Spawn();
             var particleSystem = go.GetComponentInChildren<ParticleSystem>().main;
             particleSystem.startRotation = rotation * Mathf.Deg2Rad;

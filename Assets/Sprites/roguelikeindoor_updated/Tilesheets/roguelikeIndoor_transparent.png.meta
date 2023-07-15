@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 0
@@ -10385,9 +10385,9 @@ TextureImporter:
       roguelikeIndoor_transparent_253: -2010252673
       roguelikeIndoor_transparent_461: -1746080215
       roguelikeIndoor_transparent_48: -1515946829
-      roguelikeIndoor_transparent_337: 1698867042
       roguelikeIndoor_transparent_476: 1526949178
       roguelikeIndoor_transparent_439: 1089832211
+      roguelikeIndoor_transparent_337: 1698867042
       roguelikeIndoor_transparent_82: 171224230
       roguelikeIndoor_transparent_167: -1835477029
       roguelikeIndoor_transparent_81: -76885681
@@ -10489,12 +10489,12 @@ TextureImporter:
       roguelikeIndoor_transparent_251: -129085303
       roguelikeIndoor_transparent_332: -969578790
       roguelikeIndoor_transparent_16: 848237948
-      roguelikeIndoor_transparent_427: 1730219011
       roguelikeIndoor_transparent_445: -330832481
-      roguelikeIndoor_transparent_368: 179376473
+      roguelikeIndoor_transparent_427: 1730219011
       roguelikeIndoor_transparent_402: 943894874
       roguelikeIndoor_transparent_437: 99601441
       roguelikeIndoor_transparent_209: 684615146
+      roguelikeIndoor_transparent_368: 179376473
       roguelikeIndoor_transparent_26: -352283106
       roguelikeIndoor_transparent_414: 1480193598
       roguelikeIndoor_transparent_194: -590125214
@@ -10615,9 +10615,9 @@ TextureImporter:
       roguelikeIndoor_transparent_105: -1029653071
       roguelikeIndoor_transparent_385: 1641597121
       roguelikeIndoor_transparent_31: 1999452656
-      roguelikeIndoor_transparent_197: -2075528871
-      roguelikeIndoor_transparent_419: 1686940648
       roguelikeIndoor_transparent_473: 676553684
+      roguelikeIndoor_transparent_419: 1686940648
+      roguelikeIndoor_transparent_197: -2075528871
       roguelikeIndoor_transparent_276: -2072064044
       roguelikeIndoor_transparent_35: -2059397030
       roguelikeIndoor_transparent_279: 534846946
@@ -10629,20 +10629,20 @@ TextureImporter:
       roguelikeIndoor_transparent_120: -2031632101
       roguelikeIndoor_transparent_215: 1599938171
       roguelikeIndoor_transparent_53: 1084710345
-      roguelikeIndoor_transparent_62: -196355858
       roguelikeIndoor_transparent_430: 1543790603
       roguelikeIndoor_transparent_178: -952993217
-      roguelikeIndoor_transparent_284: -187397053
+      roguelikeIndoor_transparent_62: -196355858
       roguelikeIndoor_transparent_219: 602085089
+      roguelikeIndoor_transparent_284: -187397053
       roguelikeIndoor_transparent_163: 2561783
-      roguelikeIndoor_transparent_224: 940000815
       roguelikeIndoor_transparent_362: 354667324
       roguelikeIndoor_transparent_275: 1306346473
       roguelikeIndoor_transparent_99: -1655326913
       roguelikeIndoor_transparent_37: -410316017
-      roguelikeIndoor_transparent_467: 1114152649
+      roguelikeIndoor_transparent_224: 940000815
       roguelikeIndoor_transparent_342: 1586056786
       roguelikeIndoor_transparent_407: -1298386964
+      roguelikeIndoor_transparent_467: 1114152649
       roguelikeIndoor_transparent_221: 2066312436
       roguelikeIndoor_transparent_42: -1869337675
       roguelikeIndoor_transparent_93: 748421004
@@ -10677,22 +10677,22 @@ TextureImporter:
       roguelikeIndoor_transparent_135: 1867193958
       roguelikeIndoor_transparent_395: 2014862206
       roguelikeIndoor_transparent_50: -783978343
-      roguelikeIndoor_transparent_68: 1560352092
       roguelikeIndoor_transparent_372: -585856404
+      roguelikeIndoor_transparent_428: -941385502
       roguelikeIndoor_transparent_454: -1322144194
       roguelikeIndoor_transparent_130: -1535478088
-      roguelikeIndoor_transparent_236: 1586268179
       roguelikeIndoor_transparent_286: 171247912
-      roguelikeIndoor_transparent_340: 625632477
+      roguelikeIndoor_transparent_68: 1560352092
       roguelikeIndoor_transparent_365: -649017645
       roguelikeIndoor_transparent_111: -735464690
+      roguelikeIndoor_transparent_236: 1586268179
       roguelikeIndoor_transparent_179: -244553344
-      roguelikeIndoor_transparent_428: -941385502
       roguelikeIndoor_transparent_132: 1271691072
+      roguelikeIndoor_transparent_340: 625632477
       roguelikeIndoor_transparent_367: -370650413
-      roguelikeIndoor_transparent_330: -2127481585
       roguelikeIndoor_transparent_438: -556675575
       roguelikeIndoor_transparent_450: -1165004646
+      roguelikeIndoor_transparent_330: -2127481585
       roguelikeIndoor_transparent_394: 1933074899
       roguelikeIndoor_transparent_67: 1550481303
       roguelikeIndoor_transparent_277: -1791700998

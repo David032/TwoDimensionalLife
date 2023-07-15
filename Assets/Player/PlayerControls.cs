@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TwoDLife.Interactions;
 using TwoDLife.Item;
 using Unity.Netcode;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -15,18 +15,23 @@ namespace TwoDLife.Player
         Vector2 move;
         public bool canMove = true;
         public bool canUse = true;
+        public bool canEmote = true;
+        public bool canInteract = true;
+        public bool isInteracting = false;
         public float playerSpeed = 1f;
         public Facing ClickFacing;
         //Properties
         Rigidbody2D playerRigid;
         BoxCollider2D playerCollider;
         PlayerInventory playerInventory;
+        EmoteSystem playerEmoteSystem;
 
         void Start()
         {
             playerRigid = GetComponentInChildren<Rigidbody2D>();
             playerCollider = GetComponentInChildren<BoxCollider2D>();
             playerInventory = GetComponent<PlayerInventory>();
+            playerEmoteSystem = GetComponentInChildren<EmoteSystem>();
         }
 
         // Update is called once per frame
@@ -126,6 +131,38 @@ namespace TwoDLife.Player
 
         }
 
+        public void OnEmote(InputAction.CallbackContext context)
+        {
+            if (!context.performed || !canEmote)
+            {
+                return;
+            }
+
+            int emoteId = int.Parse(context.control.name);
+            playerEmoteSystem.Show((Emotes)emoteId);
+        }
+
+        public void OnInteract(InputAction.CallbackContext context)
+        {
+            if (!context.performed || !canInteract)
+            {
+                isInteracting = false;
+                return;
+            }
+
+            isInteracting = true;
+        }
+
+        public void OnSlotOneUse(InputAction.CallbackContext context)
+        {
+            //This is going to backfire at some point
+            if (!context.performed || !canUse)
+            {
+                return;
+            }
+            IUsableItem item = (IUsableItem)playerInventory.Tools[0];
+            item.Use(gameObject);
+        }
         #endregion
 
         #region Misc

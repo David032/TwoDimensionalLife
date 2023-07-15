@@ -8,7 +8,9 @@ namespace TwoDLife.Item
     {
         void Use(GameObject user);
     }
-    public abstract class Item : ScriptableObject
+
+    [CreateAssetMenu(fileName = "Item", menuName = "Life2D/Item/Item")]
+    public class Item : ScriptableObject
     {
         public string Name;
         public string Description;

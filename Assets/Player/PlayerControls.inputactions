@@ -15,6 +15,24 @@
                     "initialStateCheck": true
                 },
                 {
+                    "name": "UpdatePosition",
+                    "type": "Value",
+                    "id": "a23628ea-d1bd-48a1-970a-62b194f425d1",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "UseItem",
+                    "type": "Button",
+                    "id": "19155842-4a0f-40df-8991-e2d226347f15",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "UseItemUp",
                     "type": "Button",
                     "id": "ced8dc32-30f4-418e-8524-d11ce28dbf63",
@@ -51,22 +69,31 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "UseItem",
+                    "name": "Emote",
+                    "type": "Value",
+                    "id": "0ef7ec7b-7742-4fd4-9ff0-39570aa3abbb",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Interact",
                     "type": "Button",
-                    "id": "19155842-4a0f-40df-8991-e2d226347f15",
+                    "id": "caf0aa9a-2652-4321-a006-d341d3fc2fd0",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "UpdatePosition",
-                    "type": "Value",
-                    "id": "a23628ea-d1bd-48a1-970a-62b194f425d1",
-                    "expectedControlType": "Vector2",
+                    "name": "UseItem1",
+                    "type": "Button",
+                    "id": "ff6ec4d1-738a-4847-9d12-b0f21bf2749d",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -221,6 +248,127 @@
                     "processors": "",
                     "groups": "",
                     "action": "UpdatePosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Emote 1",
+                    "id": "3db4afb2-62cb-4460-a663-043b373e9fff",
+                    "path": "OneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Emote",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier",
+                    "id": "88f06f40-2409-416d-94dc-415d18838127",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Emote",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "binding",
+                    "id": "6b22a966-a367-45b3-b115-4c01e9dfd5e3",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Emote",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Emote 2",
+                    "id": "45ac5433-c4f9-4e1a-b01f-08f60a679941",
+                    "path": "OneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Emote",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier",
+                    "id": "96e6aded-4bd0-49e2-9af1-fc1668579b7c",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Emote",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "binding",
+                    "id": "20a53c42-a036-4c59-aae6-dcc078248364",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Emote",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Emote 3",
+                    "id": "ea8ec60a-c3ef-45eb-924e-c9b5a61cea81",
+                    "path": "OneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Emote",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier",
+                    "id": "4da66d63-958e-492a-89eb-e59357e8fbc4",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Emote",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "binding",
+                    "id": "85853c05-66c1-43c7-8db9-db3f57070827",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Emote",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "4d39d5d1-6c3b-4c2b-9242-64b777adb825",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e811e1dc-2857-4d35-9005-815ebd55ac84",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UseItem1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
