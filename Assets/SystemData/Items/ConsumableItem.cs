@@ -4,18 +4,13 @@ using UnityEngine;
 
 namespace TwoDLife.Item
 {
-    public abstract class ConsumableItem : Item, IUsableItem
+    public abstract class ConsumableItem : UsableItem
     {
-        int uses = 3;
+        protected int uses = 3;
         public int Uses
         {
             get => uses;
             set => uses -= value;
-        }
-
-        public void Use(GameObject user)
-        {
-            uses -= 1;
         }
     }
 }
