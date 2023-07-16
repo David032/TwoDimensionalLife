@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TwoDLife.Items;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -31,7 +32,7 @@ namespace TwoDLife.Player
             ActiveSlot.SetActive(!ActiveSlot.activeSelf);
         }
 
-        public void SetSlotImage(Item.Item item)
+        public void SetSlotImage(Item item)
         {
             ItemImage.sprite = item.Image;
         }

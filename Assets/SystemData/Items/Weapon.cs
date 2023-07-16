@@ -6,7 +6,7 @@ using TwoDLife.Player;
 using Unity.Netcode;
 using UnityEngine;
 
-namespace TwoDLife.Item
+namespace TwoDLife.Items
 {
     [CreateAssetMenu(fileName = "Weapon", menuName = "Life2D/Item/Weapon")]
     public class Weapon : UsableItem, IUsableItem

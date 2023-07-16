@@ -5,7 +5,7 @@ using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 using static UnityEngine.UIElements.UxmlAttributeDescription;
 
-namespace TwoDLife.Item
+namespace TwoDLife.Items
 {
     [CreateAssetMenu(fileName = "Potion", menuName = "Life2D/Item/Potion")]
     public class Potion : ConsumableItem, IUsableItem

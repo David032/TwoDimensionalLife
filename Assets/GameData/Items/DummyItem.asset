@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Junk
   Description: Literally just some junk
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: 3042b019b052942a1baf7aa49d7ca6bb, type: 3}

@@ -896,6 +896,7 @@ MonoBehaviour:
     LoadSceneTimeOut: 120
     SpawnTimeout: 1
     EnableNetworkLogs: 1
+  startingWeapon: {fileID: 11400000, guid: 2a5f0bff8dafb734eb5691c4f7bca0b4, type: 2}
 --- !u!1001 &1775371447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1744,6 +1745,7 @@ MonoBehaviour:
   isInstanced: 0
   Contents:
   - {fileID: 11400000, guid: 9e90d6e82b57bf946b0e11c1434513d9, type: 2}
+  - {fileID: 11400000, guid: 5214d70a699fe9d449ef9b1b57011cac, type: 2}
 --- !u!61 &2062447940
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TwoDLife.Entities;
-using TwoDLife.Item;
+using TwoDLife.Items;
 using TwoDLife.Player;
 using UnityEngine;
 
@@ -11,7 +11,7 @@ namespace TwoDLife.World
     {
         //Instancing won't work until identity is implemented
         public bool isInstanced = false;
-        public List<Item.Item> Contents;
+        public List<Item> Contents;
         // Start is called before the first frame update
         void Start()
         {
@@ -41,12 +41,17 @@ namespace TwoDLife.World
             {
                 if (interactingObject.CompareTag("Player") && interactingObject.GetComponent<PlayerControls>().isInteracting)
                 {
-                    var inventory = interactingObject.GetComponent<Inventory>();
-                    print(Contents.Count);
+                    var inventory = interactingObject.GetComponent<PlayerInventory>();
                     foreach (var item in Contents)
                     {
-                        print("Adding" + item + " to " + inventory.name);
-                        inventory.AddItem(item);
+                        if (item is UsableItem itemUsable)
+                        {
+                            inventory.AddUsableItem(itemUsable);
+                        }
+                        else
+                        {
+                            inventory.AddItem(item);
+                        }
                     }
                     //Need better system for instancing loot
                     Contents.Clear();

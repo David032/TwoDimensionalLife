@@ -32,6 +32,8 @@ namespace TwoDLife.Player
             slotToActivate.SelectSlot();
 
         }
+
+        public PlayerToolbarSlot[] GetPlayerToolbarSlots() { return playerToolbarSlots; }
     }
 }
 

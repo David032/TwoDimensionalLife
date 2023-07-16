@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TwoDLife.Item
+namespace TwoDLife.Items
 {
     public abstract class ConsumableItem : UsableItem
     {

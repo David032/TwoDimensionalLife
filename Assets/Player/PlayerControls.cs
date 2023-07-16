@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TwoDLife.Interactions;
-using TwoDLife.Item;
+using TwoDLife.Items;
 using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -88,7 +88,7 @@ namespace TwoDLife.Player
             canUse = false;
             IUsableItem item = (IUsableItem)playerInventory.EquippedItem;
             item.Use(gameObject);
-            UsableItem usableItem = (UsableItem)playerInventory.EquippedItem;
+            UsableItem usableItem = playerInventory.EquippedItem;
             yield return new WaitForSeconds(usableItem.Speed);
             canUse = true;
             yield return new WaitForEndOfFrame();
@@ -155,6 +155,11 @@ namespace TwoDLife.Player
 
         public void OnSlotSelect(InputAction.CallbackContext context)
         {
+            if (!context.performed)
+            {
+                return;
+            }
+
             int slotSelected = int.Parse(context.control.name);
             playerInventory.ActiveSlot = slotSelected;
         }
