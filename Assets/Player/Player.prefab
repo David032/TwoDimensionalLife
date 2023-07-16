@@ -487,7 +487,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4696188527731482850}
         m_TargetAssemblyTypeName: TwoDLife.Player.PlayerControls, Assembly-CSharp
-        m_MethodName: OnSlotOneUse
+        m_MethodName: OnSlotSelect
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -497,8 +497,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: ff6ec4d1-738a-4847-9d12-b0f21bf2749d
-    m_ActionName: Player/UseItem1[/Keyboard/1]
+    m_ActionId: 03ab5ab0-ade8-474b-943b-f2dc2606e918
+    m_ActionName: Player/SelectSlot[/Keyboard/1,/Keyboard/2]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

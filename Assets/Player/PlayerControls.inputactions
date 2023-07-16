@@ -87,9 +87,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "UseItem1",
+                    "name": "SelectSlot",
                     "type": "Button",
-                    "id": "ff6ec4d1-738a-4847-9d12-b0f21bf2749d",
+                    "id": "03ab5ab0-ade8-474b-943b-f2dc2606e918",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -363,12 +363,56 @@
                 },
                 {
                     "name": "",
-                    "id": "e811e1dc-2857-4d35-9005-815ebd55ac84",
+                    "id": "09a0a09d-6629-4042-bbcb-db6f381712c6",
                     "path": "<Keyboard>/1",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "UseItem1",
+                    "action": "SelectSlot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1b4dc163-6768-4a86-b792-c47e64e079c2",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectSlot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "56a539d2-c180-488f-9769-0800528c12f6",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectSlot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "db0ed620-efed-4c5f-8a68-91bb66f90acb",
+                    "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectSlot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2b2c605d-62c6-430c-b447-6d29a2531605",
+                    "path": "<Keyboard>/5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectSlot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

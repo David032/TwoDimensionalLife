@@ -663,6 +663,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2645580932867951914}
+  - component: {fileID: 1631403499251868248}
   m_Layer: 5
   m_Name: ToolbarSlot3
   m_TagString: Untagged
@@ -687,13 +688,28 @@ RectTransform:
   - {fileID: 2004579854605764849}
   - {fileID: 2478911225345432929}
   m_Father: {fileID: 4627951742906920373}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1631403499251868248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2672791362603913376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff6f152c6d4f76f47a9e9b1621cabd85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemImage: {fileID: 0}
+  Slot: {fileID: 5487592711344117492}
+  ActiveSlot: {fileID: 7820387254831978445}
 --- !u!1 &2903353792952144429
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,6 +972,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4627951742906920373}
+  - component: {fileID: 9046742954378142207}
   m_Layer: 5
   m_Name: Toolbar
   m_TagString: Untagged
@@ -975,11 +992,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2645580932867951914}
-  - {fileID: 2480538960694012738}
   - {fileID: 3466203593021937970}
-  - {fileID: 4388313434982652912}
+  - {fileID: 2480538960694012738}
+  - {fileID: 2645580932867951914}
   - {fileID: 2010083442538216862}
+  - {fileID: 4388313434982652912}
   m_Father: {fileID: 5887381366056169491}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -988,6 +1005,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -0}
   m_SizeDelta: {x: 720, y: 100}
   m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &9046742954378142207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4040704524266926675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 028decb99e790774d906e3cdbafbd7ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4217415248298095072
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,8 +1163,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4388313434982652912}
+  - component: {fileID: 461085244094109280}
   m_Layer: 5
-  m_Name: ToolbarSlotFive
+  m_Name: ToolbarSlot5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1158,13 +1188,28 @@ RectTransform:
   - {fileID: 1950373905881039856}
   - {fileID: 4303243874897951452}
   m_Father: {fileID: 4627951742906920373}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 200, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &461085244094109280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4741622085142578829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff6f152c6d4f76f47a9e9b1621cabd85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemImage: {fileID: 0}
+  Slot: {fileID: 887205796433014644}
+  ActiveSlot: {fileID: 3552474196340242615}
 --- !u!1 &4872341943416793311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1615,6 +1660,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3466203593021937970}
+  - component: {fileID: 5648587428397421505}
   m_Layer: 5
   m_Name: ToolbarSlot1
   m_TagString: Untagged
@@ -1639,13 +1685,28 @@ RectTransform:
   - {fileID: 4377443956411267757}
   - {fileID: 916041492692137392}
   m_Father: {fileID: 4627951742906920373}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -200, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5648587428397421505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5856653858451877693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff6f152c6d4f76f47a9e9b1621cabd85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemImage: {fileID: 0}
+  Slot: {fileID: 5496872855353564012}
+  ActiveSlot: {fileID: 8155039848429397169}
 --- !u!1 &7609981108914878029
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,8 +1929,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2010083442538216862}
+  - component: {fileID: 6540449189422872313}
   m_Layer: 5
-  m_Name: ToolbarSlotFour
+  m_Name: ToolbarSlot4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1892,13 +1954,28 @@ RectTransform:
   - {fileID: 6249817236061468446}
   - {fileID: 6261828478635366406}
   m_Father: {fileID: 4627951742906920373}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 100, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6540449189422872313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7906144822733046756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff6f152c6d4f76f47a9e9b1621cabd85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemImage: {fileID: 0}
+  Slot: {fileID: 758431586652246592}
+  ActiveSlot: {fileID: 568204302021910492}
 --- !u!1 &7929139120151283211
 GameObject:
   m_ObjectHideFlags: 0
@@ -2136,6 +2213,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2480538960694012738}
+  - component: {fileID: 7966811638983717154}
   m_Layer: 5
   m_Name: ToolbarSlot2
   m_TagString: Untagged
@@ -2167,3 +2245,18 @@ RectTransform:
   m_AnchoredPosition: {x: -100, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7966811638983717154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9020650404877047297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff6f152c6d4f76f47a9e9b1621cabd85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemImage: {fileID: 0}
+  Slot: {fileID: 7929139120151283211}
+  ActiveSlot: {fileID: 1150037528718622674}

@@ -153,15 +153,10 @@ namespace TwoDLife.Player
             isInteracting = true;
         }
 
-        public void OnSlotOneUse(InputAction.CallbackContext context)
+        public void OnSlotSelect(InputAction.CallbackContext context)
         {
-            //This is going to backfire at some point
-            if (!context.performed || !canUse)
-            {
-                return;
-            }
-            IUsableItem item = (IUsableItem)playerInventory.Tools[0];
-            item.Use(gameObject);
+            int slotSelected = int.Parse(context.control.name);
+            playerInventory.ActiveSlot = slotSelected;
         }
         #endregion
 
